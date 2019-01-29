@@ -1,0 +1,56 @@
+-- phpMyAdmin SQL Dump
+-- version phpStudy 2014
+-- http://www.phpmyadmin.net
+--
+-- 主机: localhost
+-- 生成日期: 2019 �?01 �?29 �?13:47
+-- 服务器版本: 5.7.17-log
+-- PHP 版本: 5.5.30
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+
+--
+-- 数据库: `edu`
+--
+
+-- --------------------------------------------------------
+
+--
+-- 表的结构 `student`
+--
+
+CREATE TABLE IF NOT EXISTS `student` (
+  `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `name` varchar(30) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `course` varchar(10) NOT NULL,
+  `grade` int(11) NOT NULL,
+  `create_time` int(11) NOT NULL,
+  `update_time` int(11) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=10 ;
+
+--
+-- 转存表中的数据 `student`
+--
+
+INSERT INTO `student` (`id`, `name`, `email`, `course`, `grade`, `create_time`, `update_time`) VALUES
+(1, '郭靖', 'guojing@mobanw.com', 'php', 80, 1548641845, 1548641845),
+(2, '黄蓉', 'huangrong@mobanw.com', 'mysql', 90, 1548642054, 1548642054),
+(3, '杨康', 'yangkang@mobanw.com', 'html', 100, 1548642054, 1548642054),
+(4, '洪七公', 'hongqigong@mobanw.com', 'java', 90, 1548642054, 1548642054),
+(5, '老顽童', 'laowantong@mobanw.com', 'html', 60, 1548642054, 1548642054),
+(6, '杨过', 'yangguo@mobanw.com', 'python', 96, 1548642054, 1548642054),
+(7, '小龙女', 'xiaolonglv@mobanw.com', 'mysql', 50, 1548642054, 1548642054),
+(8, '董小姐', 'dong@mobanw.com', 'js', 99, 1548659664, 1548659664);
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
